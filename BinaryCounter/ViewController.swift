@@ -43,7 +43,7 @@ extension ViewController:UITableViewDelegate,UITableViewDataSource,CellDelegate{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell=tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! TableViewCell
         cell.numbers.text = String(describing: pow(10, indexPath.row))
-        cell.delegate? = self
+        cell.delegate = self
         
        return cell
         
