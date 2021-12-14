@@ -28,6 +28,7 @@ class ViewController: UIViewController{
 extension ViewController:UITableViewDelegate,UITableViewDataSource,CellDelegate{
     func addfunc(value: Int) {
         totalnum+=value
+        
         total.text="Total :\(totalnum)"
         }
         
